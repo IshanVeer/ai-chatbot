@@ -3,6 +3,57 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-dark-100: #000000;
+  --color-dark-200: #1b1c1d;
+  --color-dark-300: #272a2c;
+  --color-light-100: #ffffff;
+  --color-light-200: #c4c7c5;
+  --color-light-300: #a1a9af;
+  --color-light-400: #9a9b9c;
+  --color-light-200: #c4c7c5;
+}
+
+@utility h1-bold {
+  @apply text-[56px] uppercase leading-[58px] font-bold tracking-[2px];
+}
+@utility h1-mobile-bold {
+  @apply text-[36px] uppercase leading-[40px] font-bold tracking-[1.29px];
+}
+@utility h2-bold {
+  @apply text-[40px] uppercase leading-[44px] font-bold tracking-[1.5px];
+}
+@utility h3-bold {
+  @apply text-[32px] uppercase leading-[36px] font-bold tracking-[1.15px];
+}
+@utility h4-bold {
+  @apply text-[28px] uppercase leading-[38px] font-bold tracking-[2px];
+}
+@utility h5-bold {
+  @apply text-[24px] uppercase leading-[33px] font-bold tracking-[1.7px];
+}
+@utility h6-bold {
+  @apply text-[18px] uppercase leading-[24px] font-bold tracking-[1.3px];
+}
+@utility subtitle-overline {
+  @apply text-[14px] uppercase leading-[19px] font-normal tracking-[10px];
+}
+@utility subtitle {
+  @apply text-[13px] uppercase leading-[25px] font-bold tracking-[1px];
+}
+@utility body {
+  @apply text-[15px]  leading-[25px] font-medium;
+}
+@utility button-primary {
+  @apply bg-primary-500 hover:bg-primary-300 text-light-100;
+}
+@utility button-secondary {
+  @apply bg-transparent text-dark-100 border border-dark-100 hover:bg-dark-100 hover:text-light-100;
+}
+@utility section-container {
+  @apply px-6 sm:px-10 lg:px-40;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -44,6 +95,7 @@
 }
 
 :root {
+  font-family: "Roboto Flex", sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
